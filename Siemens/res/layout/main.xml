@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1" >
+<TableRow>
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Siemens S7 300" />
+		</TableRow>
+  <TableRow>
+       <RadioGroup android:id="@+id/types">
+			<RadioButton android:id="@+id/SwitchOnPump"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text ="Switch On Pump"
+			/> 
+			<RadioButton android:id="@+id/SwitchOffPump"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:text ="Switch Off Pump"
+			    />
+      </RadioGroup>
+  </TableRow>
+  
+<TableRow >
+    <TextView android:id="@+id/IpaddressLabel"
+        	  android:text="Ip Address"/>
+    
+    <EditText android:id="@+id/IPaddressField"/>
+</TableRow>
+
+    
+<TableRow>
+  <TextView android:id="@+id/PortLable"
+      		android:text="Port No"/>
+ <EditText android:id="@+id/PortField"/>
+     
+</TableRow>
+
+
+
+    <Button android:id="@+id/Ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        />
+    
+</TableLayout>
+
+
+
